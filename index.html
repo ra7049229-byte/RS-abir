@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="bn">
-<head><meta charset="UTF-8"><title>Mridul</title></head>
-<body style="text-align:center;font-family:sans-serif;padding:40px;background:#fff8e1">
-<h1>আসসালামু আলাইকুম!</h1>
-<h2>আমি Mridul, রিয়াদ থেকে</h2>
-<p>আমার প্রথম GitHub Page — Termux দিয়ে বানানো</p>
-<p><b>25 Oct 2026, 10:31 PM</b></p>
-<hr>
-<p>GitHub: ra7049229-byte</p>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mridul - Riyadh</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background: #fff8e1;
+    color: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(212,175,55,0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(212,175,55,0.05) 0%, transparent 50%);
+  }
+  .card {
+    background: #fffdf5;
+    max-width: 420px;
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    text-align: center;
+    border-top: 4px solid #d4af37;
+    position: relative;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 60px;
+    background: repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(212,175,55,0.1) 20px, rgba(212,175,55,0.1) 40px);
+    opacity: 0.3;
+    border-radius: 24px 24px 0 0;
+  }
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  p {
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+  .badge {
+    display: inline-block;
+    background: #fff8e1;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    border: 1px solid #f0e6c8;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  .btn-primary {
+    background: #1a1a1a;
+    color: white;
+  }
+  .btn-secondary {
+    background: transparent;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+  }
+  .footer {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #888;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>আসসালামু আলাইকুম!</h1>
+    <h2>আমি Mridul, রিয়াদ থেকে</h2>
+    <p>আমার প্রথম GitHub Page — Termux দিয়ে বানানো</p>
+    
+    <div>
+      <span class="badge">🇧🇩 Bangladeshi Developer</span>
+      <span class="badge">📍 Riyadh, Saudi Arabia</span>
+    </div>
+    
+    <a href="https://github.com/ra7049229-byte" class="btn btn-primary">View GitHub →</a>
+    <a href="https://github.com/ra7049229-byte?tab=repositories" class="btn btn-secondary">Projects</a>
+    
+    <div class="footer">
+      Built with Termux • Hosted on GitHub Pages • 2026
+    </div>
+  </div>
 </body>
 </html>
