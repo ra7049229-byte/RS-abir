@@ -216,6 +216,17 @@ h1, .section-title { color: #fff8e1; text-shadow: 0 2px 14px rgba(0,0,0,0.45); }
 .tagline { color: #fff3c4; text-shadow: 0 1px 10px rgba(0,0,0,0.5); }
 .subtitle { color: #f8e7a8; text-shadow: 0 1px 8px rgba(0,0,0,0.5); }
 footer { color: #f3e3b0; background: linear-gradient(180deg, transparent, rgba(20,9,2,0.45)); border-top-color: rgba(244,208,63,0.25); }
+.contact-card {
+  background: var(--card); border-radius: 24px; padding: 32px 24px; max-width: 740px; margin: 0 auto;
+  box-shadow: var(--shadow); border: 1px solid var(--border); text-align: center;
+}
+.contact-title { font-family: 'Outfit', sans-serif; font-size: clamp(1.5rem, 4vw, 1.9rem); font-weight: 700; color: var(--text); margin-bottom: 10px; }
+.contact-text { color: #3a311f; margin-bottom: 20px; }
+.contact-btn {
+  display: inline-block; padding: 12px 28px; background: var(--gold); color: #fff; border-radius: 14px;
+  font-weight: 700; text-decoration: none; box-shadow: 0 6px 18px rgba(199,149,19,0.3); transition: background 0.2s;
+}
+.contact-btn:hover { background: #b0830f; }
 </style>
 </head>
 <body>
@@ -223,8 +234,8 @@ footer { color: #f3e3b0; background: linear-gradient(180deg, transparent, rgba(2
     <header>
       <img class="hero-banner" src="assets/banner.jpg" alt="Robin - AI Agent Developer, Riyadh KSA">
       <h1>Robin</h1>
-      <p class="tagline">Assalamu Alaikum! I am Robin, from Riyadh</p>
-      <p class="subtitle">My first GitHub Page — built with Termux</p>
+      <p class="tagline">AI Agent Developer based in Riyadh</p>
+      <p class="subtitle">Building Slack AI agents and automation tools</p>
     </header>
 
     <div class="about-card">
@@ -320,6 +331,13 @@ footer { color: #f3e3b0; background: linear-gradient(180deg, transparent, rgba(2
           </a>
         </div>
 
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact-card">
+        <h2 class="contact-title">Let's Work Together</h2>
+        <p class="contact-text">Have an AI agent or automation idea? Send me a message.</p>
+        <a href="mailto:ra7049229@zohomail.com" class="contact-btn">Email Me</a>
       </div>
     </section>
   </div>
