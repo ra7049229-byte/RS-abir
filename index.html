@@ -200,6 +200,22 @@ footer {
   .footer-links { flex-direction: column; gap: 4px; }
   .footer-links span { display: none; }
 }
+/* Sunset theme: blurred banner background with readable text */
+html { background: #1a0f05; }
+body { background: transparent; background-image: none; color: #2b2417; }
+body::before {
+  content: ''; position: fixed; inset: 0; z-index: -2;
+  background: url("assets/banner.jpg") center / cover no-repeat;
+  filter: blur(6px); transform: scale(1.06);
+}
+body::after {
+  content: ''; position: fixed; inset: 0; z-index: -1;
+  background: linear-gradient(180deg, rgba(30,14,4,0.55) 0%, rgba(30,14,4,0.72) 50%, rgba(20,9,2,0.9) 100%);
+}
+h1, .section-title { color: #fff8e1; text-shadow: 0 2px 14px rgba(0,0,0,0.45); }
+.tagline { color: #fff3c4; text-shadow: 0 1px 10px rgba(0,0,0,0.5); }
+.subtitle { color: #f8e7a8; text-shadow: 0 1px 8px rgba(0,0,0,0.5); }
+footer { color: #f3e3b0; background: linear-gradient(180deg, transparent, rgba(20,9,2,0.45)); border-top-color: rgba(244,208,63,0.25); }
 </style>
 </head>
 <body>
