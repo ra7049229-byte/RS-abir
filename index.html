@@ -231,7 +231,9 @@ footer { color: #f3e3b0; background: linear-gradient(180deg, transparent, rgba(2
 .skills-example-inner { display: inline-flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px 12px; background: rgba(255,248,225,0.14); border: 1.5px solid rgba(244,208,63,0.6); border-radius: 14px; padding: 12px 18px; color: #fff8e1; font-size: 0.95rem; box-shadow: 0 6px 18px rgba(0,0,0,0.3); text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
 .skills-example strong { color: #f4d03f; font-weight: 700; font-size: 1.05rem; }
 .skills-example a { color: #fff8e1; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
-.skills-example a:hover { color: #f4d03f; }
+.skills-example a { transition: color 0.2s ease, text-decoration-thickness 0.2s ease; border-radius: 4px; }
+.skills-example a:hover { color: #f4d03f; text-decoration-thickness: 2px; }
+.skills-example a:focus-visible { outline: 2px solid #f4d03f; outline-offset: 4px; color: #f4d03f; }
 </style>
 </head>
 <body>
