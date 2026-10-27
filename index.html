@@ -239,10 +239,20 @@ a:focus-visible, .social-btn:focus-visible, .project-link:focus-visible, .contac
   outline: 3px solid #f4d03f; outline-offset: 3px; border-radius: 8px;
   box-shadow: 0 0 0 6px rgba(30,14,4,0.55);
 }
+/* Skip link: hidden until it receives keyboard focus */
+.skip-link {
+  position: absolute; left: 50%; top: -120px; transform: translateX(-50%); z-index: 1000;
+  background: #fff8e1; color: #2b2417; padding: 10px 20px; border-radius: 10px;
+  font-weight: 700; text-decoration: none; box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  transition: top 0.2s ease;
+}
+.skip-link:focus-visible { top: 12px; outline: 3px solid #f4d03f; outline-offset: 3px; }
+#main:focus { outline: none; }
 </style>
 </head>
 <body>
-  <div class="container">
+  <a class="skip-link" href="#main">মূল কনটেন্টে যান</a>
+  <div class="container" id="main" tabindex="-1">
     <header>
       <div class="avatar-wrap"><img class="avatar" src="assets/profile.jpg" alt="Robin"></div>
       <img class="hero-banner" src="assets/banner.jpg" alt="Robin - AI Agent Developer, Riyadh KSA">
