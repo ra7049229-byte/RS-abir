@@ -234,6 +234,11 @@ footer { color: #f3e3b0; background: linear-gradient(180deg, transparent, rgba(2
 .skills-example a { transition: color 0.2s ease, text-decoration-thickness 0.2s ease; border-radius: 4px; }
 .skills-example a:hover { color: #f4d03f; text-decoration-thickness: 2px; }
 .skills-example a:focus-visible { outline: 2px solid #f4d03f; outline-offset: 4px; color: #f4d03f; }
+/* Keyboard focus: visible on dark sunset background and on white cards */
+a:focus-visible, .social-btn:focus-visible, .project-link:focus-visible, .contact-btn:focus-visible {
+  outline: 3px solid #f4d03f; outline-offset: 3px; border-radius: 8px;
+  box-shadow: 0 0 0 6px rgba(30,14,4,0.55);
+}
 </style>
 </head>
 <body>
